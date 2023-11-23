@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    border: 2px solid #48dbfb;
+    width: 1300px;
+    margin: auto;
+    height: 700px;
+    padding: 20px;
+    background: #c8d6e5;
+}
+
+.header{
+    font-size: 2em;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 1%;
+    animation-name: header ;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+.container{
+    display: flex;
+    gap: 30px;
+    
+}
+
+ .image{
+    width:100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-top: 15px;
+}
+
+.paragraph{
+    width: 100%;
+}
+.container section{
+    width: 50%;
+    margin-top: 50px ;
+    border: 2px solid #D9CAB3 ;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 10px 10px  5px#B3C0A4;
+    animation: all 300ms ease-in-out;
+    -webkit-animation: all 300ms ease-in-out;
+}
+
+.container section:hover{
+    transform: scaleX(75%);
+    -webkit-transform: scaleX(75%);
+    -moz-transform: scaleX(75%);
+    -ms-transform: scaleX(75%);
+    -o-transform: scaleX(75%);
+    cursor: pointer;
+}
+
+.content, .paragraph{
+    font-size: 2em;
+    text-align: center;
+    font-family: 'poppins' sans-serif;
+    
+}
+
+.content{
+    
+    margin: 15px 0;
+}
+
+footer{
+    text-align: center;
+    margin-top: 50px;
+}
+
+@keyframes header {
+    from{
+
+        transform: scaleX(20%);
+        background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+        
+}
+
+    to{
+        transform: scale(100%);
+        background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+        -webkit-transform: scale(100%);
+        -moz-transform: scale(100%);
+        -ms-transform: scale(100%);
+        -o-transform: scale(100%);
+}
+}
